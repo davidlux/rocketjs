@@ -1,2 +1,2 @@
 # rocketjs
-Launch your rocket!
+Launch your rocket on http://davidlux.de/rocketjs
