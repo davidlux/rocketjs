@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rocket JS</title>
+    <link rel="stylesheet" href="main.css" type="text/css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="rocket.js"></script>
+  </head>
+  <body>
+    <div class="left">
+      <div class="content">
+
+        <!-- State 1 Pre-Launch -->
+        <div class="state1">
+          <h1>Rocket Launch!</h1>
+          <input type="button" name="name" onclick="changeState(2);" value="LAUNCH">
+        </div>
+
+        <!-- Sate 2 Countdown -->
+        <div class="state2">
+          <h1>Rocket is launching!</h1>
+          <p id="countdown" class="log">
+            10
+          </p>
+          <input type="button" name="name" onclick="changeState(1);" value="ABORT!">
+        </div>
+
+        <!-- Sate 3 Lifting off -->
+        <div class="state3">
+          <h1>Lift off!</h1>
+        </div>
+
+        <!-- Sate 4 Success -->
+        <div class="state4">
+          <h1>Success!</h1>
+          <p class="log">
+            That was fun, let's do it again!
+          </p>
+          <input type="button" name="name" onclick="changeState(1);" value="RESET!">
+        </div>
+
+        <!-- Sate 5 Fail -->
+        <div class="state5">
+          <h1>Houston, we have a problem!</h1>
+          <p class="log">
+            We should try it again!
+          </p>
+          <input type="button" name="name" onclick="changeState(1);" value="RESET!">
+        </div>
+      </div>
+    </div>
+
+    <!-- Rocket -->
+    <div class="right">
+      <img class="rocket" src="img/rocket-state1.png" alt="" />
+      <img id="nervous" src="img/nervous.png" alt="" />
+      <div class="ground">
+        <img src="img/ground.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
